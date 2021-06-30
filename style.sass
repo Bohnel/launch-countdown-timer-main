@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap')
+$primaryBlue: hsl(237, 18%, 59%)
+$primaryRed: hsl(345, 95%, 68%)
+
+$neutralWhite: hsl(0, 0%, 100%)
+$neutralBlue: hsl(236, 21%, 26%)
+$neutralDarkBlue: hsl(235, 16%, 14%)
+$neutralBlack: hsl(234, 17%, 12%)
+
+body
+    font-family: 'Red Hat Text', sans-serif
+    box-sizing: border-box
+    height: 100vh
+    width: 100vw
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: url(/images/bg-stars.svg), linear-gradient(to bottom, #191a24, #261e2f)
+    text-transform: uppercase
+    overflow: hidden
+h2
+    color: $neutralWhite
+    font-size: 1em
+    letter-spacing: .3em
+    margin-bottom: 3em
+
+.countdown
+    display: flex
+    .card
+        display: flex
+        flex-direction: column
+        align-items: center
+    .fold
+        background-color: $neutralBlue
+        width: 5em
+        height: 5em
+        margin: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: $primaryRed
+        border-radius: .5em
+        user-select: none
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,.1)
+    h3
+        color: $primaryBlue
+        font-size: .8em
+        margin-top: 0
+    @media (max-width: 380px)
+        .fold
+            width: 4.3em
+            height: 4.3em
+
+
+.footer
+    position: absolute
+    bottom: 0
+    width: 100vw
+    height: 20%
+    background: center url(images/pattern-hills.svg)
+    display: flex
+    justify-content: center
+    align-items: center
+    a
+        margin: 1em
+        &:hover
+            filter: invert(56%) sepia(55%) saturate(2971%) hue-rotate(310deg) brightness(100%) contrast(97%)
+
+.tick
+    font-size: 2.5em
