@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="flip/flip.min.css" />
   <script src="flip/flip.min.js"></script>
+  
   <title>Frontend Mentor | Launch countdown timer</title>
 </head>
 
@@ -17,25 +18,25 @@
 
   <div class="countdown">
     <div class="card">
-      <div class="fold">
+      <div class="fold" data-tilt>
         <h1 id="days">08</h1>
       </div>
       <h3>days</h3>
     </div>
-    <div class="card">
-      <div class="fold">
-        <h1 id="hours">23</h1>
+      <div class="card">
+        <div class="fold" data-tilt>
+          <h1 id="hours">23</h1>
+        </div>
+        <h3>hours</h3>
       </div>
-      <h3>hours</h3>
-    </div>
     <div class="card">
-      <div class="fold">
+      <div class="fold" data-tilt>
         <h1 id="minutes">55</h1>
       </div>
       <h3>minutes</h3>
     </div>
     <div class="card">
-      <div class="fold">
+      <div class="fold" data-tilt>
         <h1 id="seconds">41</h1>
       </div>
       <h3>seconds</h3>
@@ -59,6 +60,7 @@
   </div>
   
   <script src="app.js"></script>
+  <script type="text/javascript" src="./node_modules/vanilla-tilt/dist/vanilla-tilt.js"></script>
 </body>
 
 </html>
