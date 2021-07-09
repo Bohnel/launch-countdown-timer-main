@@ -5,7 +5,7 @@ const days = document.querySelector('#days')
 
 function showTime() {
     
-    const countDownDate = new Date('July 15, 2021 17:28:0:15').getTime()
+    const countDownDate = new Date('August 29 , 2021 17:28:0:15').getTime()
 
     let date = new Date()
     let now = date.getTime()
