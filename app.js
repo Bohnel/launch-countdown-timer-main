@@ -1,17 +1,3 @@
-function handleTickInit(tick) {
-
-    Tick.helper.interval(function () {
-        var d = Tick.helper.date();
-        tick.value = {
-            sep: '.',
-            hours: d.getHours(),
-            minutes: d.getMinutes(),
-            seconds: d.getSeconds()
-        };
-    });
-
-}
-
 const seconds = document.querySelector('#seconds')
 const minutes = document.querySelector('#minutes')
 const hours = document.querySelector('#hours')
@@ -37,7 +23,6 @@ function showTime() {
 
     if (distance <= 1000) {
         document.querySelector('h2').innerHTML = 'Launch!'
-        // document.querySelector('.countdown').innerHTML = 'Abgelaufen!'
     }
 
     setTimeout(showTime, 1000)
